@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: ghost
   chart:
-    git: ssh://git@github.com/weaveworks/flux-get-started
+    git: ssh://git@github.com/alexlovelltroy/flux-get-started
     ref: master
     path: charts/ghost
   values:
@@ -21,7 +21,7 @@ spec:
       requests:
         memory: 32Mi
         cpu: 10m
-    serviceType: ClusterIP
+        serviceType: LoadBalancer
     mariadb:
       persistence:
         enabled: false
